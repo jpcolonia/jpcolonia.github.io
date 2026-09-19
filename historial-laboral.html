@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Historial Laboral</title>
+
+    <!-- Conecta el HTML con el archivo CSS -->
+    <link rel="stylesheet" href="portafolio-styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <h1>Mi Portafolio</h1>
+
+        
+
+        <!-- Enlaces entre las dos páginas -->
+        <nav>
+            <a href="portafolio-index.html">Presentación</a>
+            <a href="historial-laboral.html">Historial Laboral</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+
+        <section class="caja historial">
+
+            <h2>Historial Laboral</h2>
+
+            <!-- Todo este contenido se puede editar -->
+            <div id="laboral" class="contenido-editable">
+
+                <p>
+                    A continuación se presenta mi experiencia laboral
+                    y algunas de las actividades realizadas.
+                </p>
+
+
+                <!-- Trabajo 1 -->
+                <div class="experiencia">
+
+                    <h3>Consejero / Asesor</h3>
+
+                    <p>
+                        Centro de Consejería / Oficina de Atención
+                    </p>
+
+                    <p>
+                        Orientación y atención a personas para resolver
+                        diferentes inquietudes.
+                    </p>
+
+                    <p>
+                        Atención y orientación, escucha activa y
+                        resolución de inquietudes.
+                    </p>
+
+                </div>
+
+
+                <!-- Trabajo 2 -->
+                <div class="experiencia">
+
+                    <h3>Desarrollador en Prácticas</h3>
+
+                    <p>
+                        Startup / Empresa de Desarrollo Web
+                    </p>
+
+                    <p>
+                        Participación en el desarrollo de páginas web
+                        utilizando diferentes tecnologías.
+                    </p>
+
+                    <ul>
+                        <li>Desarrollo con HTML y CSS.</li>
+                        <li>Uso de JavaScript.</li>
+                        <li>Diseño de páginas web.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Botón para editar -->
+            <button onclick="editar('laboral', this)">
+                Editar 
+            </button>
+
+            <br>
+
+            <!-- Regresar a la primera página -->
+            <a href="portafolio-index.html" class="boton">
+                Volver a Presentación
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mi Portafolio</p>
+    </footer>
+
+
+    <!-- Conecta el JavaScript -->
+    <script src="portafolio-script.js"></script>
+
+</body>
+
+</html>
