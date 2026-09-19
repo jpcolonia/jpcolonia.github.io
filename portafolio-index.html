@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portafolio</title>
+
+    <!-- Conecta el HTML con el archivo CSS -->
+    <link rel="stylesheet" href="portafolio-styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <h1>Mi Portafolio</h1>
+
+        <!-- Enlaces entre las dos páginas -->
+        <nav>
+            <a href="portafolio-index.html">Presentación</a>
+            <a href="historial-laboral.html">Historial Laboral</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+
+        <!-- PRESENTACIÓN -->
+        <section class="caja">
+
+            <h2>Presentación</h2>
+
+            <!-- Todo lo que está aquí se puede editar -->
+            <div id="presentacion" class="contenido-editable">
+
+                <div class="presentacion">
+
+                    <img
+                        src="https://tse3.mm.bing.net/th/id/OIP.3cLFzH0vI4zY_MdVi7o4hAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Foto de perfil"
+                    >
+
+                    <div>
+                        <h4>Estudiante de Ingeniería de Sistemas</h4>
+
+                        <p>
+                            Vengo del area limitrofe, con una creatividad impresionante
+                            para desarrollar maquinas capaces de destruir a un ornitorrinco.
+                        </p>
+
+                        <p>
+                            En este portafolio podrás conocer mi formación
+                            académica y mi experiencia laboral.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Botón para editar -->
+            <button onclick="editar('presentacion', this)">
+                Editar 
+            </button>
+
+        </section>
+
+
+        <!-- HISTORIAL ACADÉMICO -->
+        <section class="caja">
+
+            <h2>Historial Académico</h2>
+
+            <!-- Información que se puede editar -->
+            <div id="academico" class="contenido-editable">
+
+                <div class="dato">
+                    <h4>Educación Secundaria</h4>
+                    <p>Colegio o Institución Educativa</p>
+                </div>
+
+                <div class="dato">
+                    <h4>Universidad</h4>
+                    <p>Ingeniería de Sistemas - 7mo semestre</p>
+                </div>
+
+                <div class="dato">
+                    <h4>Cursos y Diplomados</h4>
+                    <p>Taller de React, desarrollo web y otros cursos.</p>
+                </div>
+
+            </div>
+
+            <!-- Botón para editar -->
+            <button onclick="editar('academico', this)">
+                Editar
+            </button>
+
+            <br>
+
+            <!-- Enlace a la segunda página -->
+            <a href="historial-laboral.html" class="boton">
+                Ver Historial Laboral
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mi Portafolio</p>
+    </footer>
+
+
+    <!-- Conecta el JavaScript -->
+    <script src="portafolio-script.js"></script>
+
+</body>
+
+</html>
